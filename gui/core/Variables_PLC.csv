@@ -1,0 +1,246 @@
+OPC/UA_DISPLAYNAME,PLC_TYPE,PLC_PROTECTION,IMPORT,DATATYPE,ALIAS,VISUALIZATION NAME,DESCRIPTION,INPUT PROTECTION,INPUT TYPE,MIN,MAX,DEC,SCALE,U.M.
+BackPressureRegulatorTempMonitor_sActTemperature,DINT,TRUE,TRUE,Int32,Temp_BPR_ActTemp,T_BPR,Temp. riduttore di pressione in uscita ( BPR),R,Value,0,150,1,0.1,°C
+BackPressureRegulatorTempMonitor_sAlarm,DINT,TRUE,TRUE,Int32,Temp_BPR_Alarm,Alarm_T_BPR,Allarme se temperatura supera soglia Threshold,R,Bool,0,1,0,,
+BackPressureRegulatorTempMonitor_sLimitTrashold,DINT,FALSE,TRUE,Int32,Temp_BPR_Threshold,Thrs_T_BPR,Set soglia di allarme,R/W,Value,0,100,0,,°C
+BackPressureRegulatorTempMonitor_sWarning,DINT,TRUE,TRUE,Int32,Temp_BPR_Warning,Wrng_T_BPR,Warning  ( esempio sensore staccato ) OUT Limit,R,Bool,0,1,0,,
+FlowMonitor1_sBypass,DINT,FALSE,TRUE,Int32,FlowMon_sBypass,IndMod.  En. Bypass,flag per bypassare il controllo di flusso e pressione,R,Bool,0,1,0,,
+FlowMonitor1_sConditionOK,DINT,TRUE,TRUE,Int32,FlowMon_sConditionOK,IndMod.  Enable,Condizione Ok,R/W,Bool,0,1,0,,
+FlowMonitor1_sEnableOut,DINT,FALSE,TRUE,Int32,FlowMon_sEnableOut,IndMod.  Enable for maintenance,Abilita uscita,R/W,Value,0,1,0,,
+FlowMonitor1_sMinLimitThreshold,DINT,FALSE,TRUE,Int32,FlowMon_sMinLimitThreshold,Thrs_Flw_Ind_min,Limite soglia,R/W,Value,0,54,0,,ml/min
+FlowMonitor1_sMinPressureThreshold,DINT,FALSE,TRUE,Int32,FlowMon_sMinPressureThreshold,Thrs_P_Ind_min,Min pressione soglia,R/W,Value,0,250,0,,Bar
+FlowMonitor1_sPumpFlowIsOK,DINT,TRUE,TRUE,Int32,FlowMon_sPumpFlowIsOK,IndMod   Flow EN,pump flow is ok,R,Bool,0,1,0,,
+FlowMonitor1_sPumpPressureIsOk,DINT,TRUE,TRUE,Int32,FlowMon_sPumpPressureIsOk,IndMod   Pressure EN,pump pressure os ok,R,Bool,0,1,0,,
+InjectedFluidTemperatureMonitor_sActTemperature,DINT,TRUE,TRUE,Int32,Temp_Slurry_ActTemp,T_slr_in,Temp.  della poltiglia 8 slurry) biomassa liquida,R,Value,0,60,1,0.1,°C
+InjectedFluidTemperatureMonitor_sAlarm,DINT,TRUE,TRUE,Int32,Temp_Slurry_Alarm,Alarm_T_slr,,R,Bool,0,1,0,,
+InjectedFluidTemperatureMonitor_sLimitTrashold,DINT,FALSE,TRUE,Int32,Temp_Slurry_thresold,Thrs_slr_in,,R/W,Value,0,40,0,,°C
+InjectedFluidTemperatureMonitor_sWarning,DINT,TRUE,TRUE,Int32,Temp_Slurry_warning,Wrng_T_slr,,R,Bool,0,1,0,,
+InletCoolingWaterTempMonitor_sActTemperature,DINT,TRUE,TRUE,Int32,Temp_WaterInput_ActTemp,T_h20Huber_in,Temperatura Acqua  di raffredamento in ingresso,R,Value,0,120,1,0.1,°C
+InletCoolingWaterTempMonitor_sAlarm,DINT,TRUE,TRUE,Int32,Temp_WaterInput_Alarm,Alarm_T_h20Huber_in,,R,Bool,0,1,0,,
+InletCoolingWaterTempMonitor_sLimitTrashold,DINT,FALSE,TRUE,Int32,Temp_WaterInput_Thresold,Thrs_T_h20Huber_in,,R/W,Value,0,50,0,,°C
+InletCoolingWaterTempMonitor_sWarning,DINT,TRUE,TRUE,Int32,Temp_WaterInput_Warning,Wrng_T_h20Huber_in,,R,Bool,0,1,0,,
+InletFilterTempMonitor_sActTemperature,DINT,TRUE,TRUE,Int32,Temp_Filter_ActTempe,T_slr_filter,Temperatura ingresso filtro,R,Value,0,130,1,0.1,°C
+InletFilterTempMonitor_sAlarm,DINT,TRUE,TRUE,Int32,Temp_Filter_Alarm,Alarm_T_slr_filter,,R,Bool,0,1,0,,
+InletFilterTempMonitor_sLimitTrashold,DINT,FALSE,TRUE,Int32,Temp_Filter_Threshold,Thrs_T_slr_filter,,R/W,Value,0,90,0,,°C
+InletFilterTempMonitor_sWarning,DINT,TRUE,TRUE,Int32,Temp_Filter_Warning,Wrng_T_slr_filter,,R,Bool,0,1,0,,
+OutletCoolingWaterTempMonitor_sActTemperature,DINT,TRUE,TRUE,Int32,Temp_WaterOutput_ActTemp,T_h20Huber_out,Temperatura acqua di raffreddamento in uscita,R,Value,0,120,1,0.1,°C
+OutletCoolingWaterTempMonitor_sAlarm,DINT,TRUE,TRUE,Int32,Temp_WaterOutput_Alarm,Alarm_T_h20Huber_out,,R,Bool,0,1,0,,
+OutletCoolingWaterTempMonitor_sLimitTrashold,DINT,FALSE,TRUE,Int32,Temp_WaterOutput_Thresold,Thrs_T_h20Huber_out,,R/W,Value,0,50,0,,°C
+OutletCoolingWaterTempMonitor_sWarning,DINT,TRUE,TRUE,Int32,Temp_WaterOutput_Warning,Wrng_T_h20Huber_out,,R,Bool,0,1,0,,
+OutputConverterPreHeater2_ClassSvr,DINT,FALSE,TRUE,Int32,Preheater2_cls_srv,Preh2_CLS_SRV,Classe di scalatura 4-20mA e abilitazione per funzion.,R/W,Bool,,,,,
+OutputConverterPreHeater2_EnableOut,DINT,TRUE,TRUE,Int32,Preheater2_enable_out,Preh2_enable_out,manuale,R,Bool,,,,,
+OutputConverterPreHeater2_InputPercent,DINT,TRUE,TRUE,Int32,Preheater2_inputPercent,PID_IND,,R,Value,0,1000,0,,%
+PID_Regulator_1_PFR_ActOpMode,UDINT,FALSE,TRUE,UInt32,PID1_PFR_ActOpMode,PFR PID Mode,PID1_PFR Modalità stato PID in regolazione off etc..,R,Bool,0,1,0,,
+PID_Regulator_1_PFR_sActTemperature,DINT,TRUE,TRUE,Int32,PID1_PFR_sActTemperature,T_PFR,temperatura letta,R,Value,0,400,1,0.1,°C
+PID_Regulator_1_PFR_sAlarm,DINT,TRUE,TRUE,Int32,PID1_PFR_sAlarm,Alarm_T_PFR,Allarme incoerenza..set e valori rilevati.,R,Bool,0,1,0,,
+PID_Regulator_1_PFR_sAuxStepSetpoint,DINT,TRUE,TRUE,Int32,PID1_PFR_auxstep_Step,PFR Auxstep_Step,Valore temperatura durante il gradiente,R,Value,0,1000,,0.1,
+PID_Regulator_1_PFR_sControlPowerOut,DINT,TRUE,TRUE,Int32,PID1_PFR_sControlPowerOut,PID_PFR,% di carico in uscita,R,Value,0,100,0,0.1,
+PID_Regulator_1_PFR_sFinalSetPoint,DINT,FALSE,TRUE,Int32,PID1_PFR_sFinalSetPoint,Tset_PFR,temperatura impostata,R/W,Value,0,400,0,0.1,°C
+PID_Regulator_1_PFR_sGradient_deg_min,DINT,FALSE,TRUE,Int32,PID1_PFR_sGradient_deg_min,Grad_PFR,gradiente di salita della temperatura,R/W,Value,0,20,0,,°C/min
+PID_Regulator_1_PFR_sKD,DINT,FALSE,TRUE,Int32,PID1_PFR_sKD,PID_PFR_KD,PID – temine derivativo,R/W,Value,0,1000,0,,
+PID_Regulator_1_PFR_skI,DINT,FALSE,TRUE,Int32,PID1_PFR_skI,PID_PFR_KI,PID – temine integrale,R/W,Value,0,1000,0,,
+PID_Regulator_1_PFR_skP,DINT,FALSE,TRUE,Int32,PID1_PFR_skP,PID_PFR_KP,PID – temine proporzionale,R/W,Value,0,1000,0,,
+PID_Regulator_1_PFR_sMinPulseTime,UDINT,FALSE,TRUE,UInt32,PID1_PFR_sMinPulseTime,PID_PFR_minpulseTime,Impulso minimo,R/W,Value,0,1000,0,,
+PID_Regulator_1_PFR_sSampleTime,UDINT,FALSE,TRUE,UInt32,PID1_PFR_sSampleTime,PID_PFR_SampleTime,Frequenza di campionamento e calcolo PID,R/W,Value,1,1000,0,,mS
+PID_Regulator_1_PFR_sScaleMax,DINT,FALSE,TRUE,Int32,PID1_PFR_sScaleMax,PID_PFR_MaxScale,Setta la percentuale massima di carico,R/W,Value,0,1000,0,,
+PID_Regulator_1_PFR_sStartRegualtion,DINT,FALSE,TRUE,Int32,PID1_PFR_sStartRegualtion,PID_PFR_switch,Abilita/disabilita  il controllo pid,R/W,Bool,0,1,0,,
+PID_Regulator_2_PreHeater1_ActOpMode,UDINT,FALSE,TRUE,UInt32,PID2_PreH1_ActOpMode,PreH1 PID Mode (not present),,R,Bool,0,1,0,,
+PID_Regulator_2_PreHeater1_sActTemperature,DINT,TRUE,TRUE,Int32,PID2_PreH1_sActTemperature,PreH1 Temp. (not present),,R,Value,0,400,1,0.1,°C
+PID_Regulator_2_PreHeater1_sAlarm,DINT,TRUE,TRUE,Int32,PID2_PreH1_sAlarm,PreH1 Alarm. (not present),,R,Bool,0,1,0,,
+PID_Regulator_2_PreHeater1_sAuxStepSetpoint,DINT,TRUE,TRUE,Int32,PID3_PreH1_Auxstep_Step,PreH1 Auxstep_Setp (not present),,R,Value,0,1000,1,0.1,°C
+PID_Regulator_2_PreHeater1_sControlPowerOut,DINT,TRUE,TRUE,Int32,PID2_PreH1_sControlPowerOut,PreH1 Cntrl power out (not present),,R,Value,0,100,0,0.1,
+PID_Regulator_2_PreHeater1_sFinalSetPoint,DINT,FALSE,TRUE,Int32,PID2_PreH1_sFinalSetPoint,PreH1 Setpoint (not present),,R/W,Value,0,400,0,0.1,°C
+PID_Regulator_2_PreHeater1_sGradient_deg_min,DINT,FALSE,TRUE,Int32,PID2_PreH1_sGradient_deg_min,PreH1 gradient (not present),Al momento non usato,R/W,Value,0,20,0,,
+PID_Regulator_2_PreHeater1_sKD,DINT,FALSE,TRUE,Int32,PID2_PreH1_sKD,PreH1 KD (not present),,R/W,Value,0,1000,0,,
+PID_Regulator_2_PreHeater1_skI,DINT,FALSE,TRUE,Int32,PID2_PreH1_skI,PreH1 KI (not present),,R/W,Value,0,1000,0,,
+PID_Regulator_2_PreHeater1_skP,DINT,FALSE,TRUE,Int32,PID2_PreH1_skP,PreH1 KP (not present),,R/W,Value,0,1000,0,,
+PID_Regulator_2_PreHeater1_sMinPulseTime,UDINT,FALSE,TRUE,UInt32,PID2_PreH1_sMinPulseTime,PreH1 Minpulse (not present),,R/W,Value,0,1000,0,,
+PID_Regulator_2_PreHeater1_sSampleTime,UDINT,FALSE,TRUE,UInt32,PID2_PreH1_sSampleTime,PreH1 PID Sample time (not present),,R/W,Value,1,1000,0,,mS
+PID_Regulator_2_PreHeater1_sScaleMax,DINT,FALSE,TRUE,Int32,PID2_PreH1_sScaleMax,PreH1 MaxScale (not present),,R/W,Value,0,1000,0,,
+PID_Regulator_2_PreHeater1_sStartRegualtion,DINT,FALSE,TRUE,Int32,PID2_PreH1_sStartRegualtion,PreH1 Control START (not present),,R/W,Bool,0,1,0,,
+PID_Regulator_3_PreHeater2_ActOpMode,UDINT,FALSE,TRUE,UInt32,PID3_PreH2_ActOpMode,IND PID Mode,PID3 IND Modalità stato PID in regolazione off etc..,R,Bool,0,1,0,,
+PID_Regulator_3_PreHeater2_sActTemperature,DINT,TRUE,TRUE,Int32,PID3_PreH2_sActTemperature,T_slr_IND,temperatura letta,R,Value,0,400,1,0.1,°C
+PID_Regulator_3_PreHeater2_sAlarm,DINT,TRUE,TRUE,Int32,PID3_PreH2_sAlarm,Alarm_T_slr_IND,Allarme incoerenza..set e valori rilevati.,R,Bool,0,1,0,,
+PID_Regulator_3_PreHeater2_sAuxStepSetpoint,DINT,TRUE,TRUE,Int32,PID3_PreH2_Auxstep_Step,IND Auxstep_Step,,R,Value,0,1000,1,0.1,°C
+PID_Regulator_3_PreHeater2_sControlPowerOut,DINT,TRUE,TRUE,Int32,PID3_PreH2_sControlPowerOut,PID_IND_2,% di carico in uscita,R,Value,0,100,0,0.1,
+PID_Regulator_3_PreHeater2_sFinalSetPoint,DINT,FALSE,TRUE,Int32,PID3_PreH2_sFinalSetPoint,Tset_IND,temperatura impostata,R/W,Value,0,400,0,0.1,°C
+PID_Regulator_3_PreHeater2_sGradient_deg_min,DINT,FALSE,TRUE,Int32,PID3_PreH2_sGradient_deg_min,Grad_T_IND,gradiente di salita della temperatura,R/W,Value,0,20,0,,
+PID_Regulator_3_PreHeater2_sKD,DINT,FALSE,TRUE,Int32,PID3_PreH2_sKD,PID_IND_KD,temine derivativo,R/W,Value,0,1000,0,,
+PID_Regulator_3_PreHeater2_skI,DINT,FALSE,TRUE,Int32,PID3_PreH2_skI,PID_IND_KI,temine integrale,R/W,Value,0,1000,0,,
+PID_Regulator_3_PreHeater2_skP,DINT,FALSE,TRUE,Int32,PID3_PreH2_skP,PID_IND_KP,temine proporzionale,R/W,Value,0,1000,0,,
+PID_Regulator_3_PreHeater2_sMinPulseTime,UDINT,FALSE,TRUE,UInt32,PID3_PreH2_sMinPulseTime,PID_IND_Minpulse,Impulso minimo,R/W,Value,0,1000,0,,
+PID_Regulator_3_PreHeater2_sSampleTime,UDINT,FALSE,TRUE,UInt32,PID3_PreH2_sSampleTime,PID_IND_SampleTime,Frequenza di campionamento e calcolo PID,R/W,Value,1,1000,0,,mS
+PID_Regulator_3_PreHeater2_sScaleMax,DINT,FALSE,TRUE,Int32,PID3_PreH2_sScaleMax,PID_IND_MaxScale,Setta la percentuale massima di carico,R/W,Value,0,1000,0,,
+PID_Regulator_3_PreHeater2_sStartRegualtion,DINT,FALSE,TRUE,Int32,PID3_PreH2_sStartRegualtion,PID_IND_switch,Abilita/disabilita  il controllo pid,R/W,Bool,0,1,0,,
+PID_Regulator_4_Pipe1_ActOpMode,UDINT,FALSE,TRUE,UInt32,PID4_Pipe1_ActOpMode,FILT PID Mode,PID4 Fil. Modalità stato PID in regol. off etc..,R,Bool,0,1,0,,
+PID_Regulator_4_Pipe1_sActTemperature,DINT,TRUE,TRUE,Int32,PID4_Pipe1_sActTemperature,T_FILT,temperatura letta,R,Value,0,400,1,0.1,°C
+PID_Regulator_4_Pipe1_sAlarm,DINT,TRUE,TRUE,Int32,PID4_Pipe1_sAlarm,Alarm_T_FILT,Allarme incoerenza..set e valori rilevati.,R,Bool,0,1,0,,
+PID_Regulator_4_Pipe1_sAuxStepSetpoint,DINT,TRUE,TRUE,Int32,PID4_Pipe1_Auxstep_Step,FILT Auxstep_Step,,R,Value,0,1000,1,0.1,°C
+PID_Regulator_4_Pipe1_sControlPowerOut,DINT,TRUE,TRUE,Int32,PID4_Pipe1_sControlPowerOut,PID_FILT,% di carico in uscita,R,Value,0,100,0,0.1,
+PID_Regulator_4_Pipe1_sFinalSetPoint,DINT,FALSE,TRUE,Int32,PID4_Pipe1_sFinalSetPoint,Tset_FILT,temperatura impostata,R/W,Value,0,400,0,0.1,°C
+PID_Regulator_4_Pipe1_sGradient_deg_min,DINT,FALSE,TRUE,Int32,PID4_Pipe1_sGradient_deg_min,Grad_T_FILT,gradiente di salita della temperatura,R/W,Value,0,20,0,,
+PID_Regulator_4_Pipe1_sKD,DINT,FALSE,TRUE,Int32,PID4_Pipe1_sKD,PID_FILT_KD,temine derivativo,R/W,Value,0,1000,0,,
+PID_Regulator_4_Pipe1_skI,DINT,FALSE,TRUE,Int32,PID4_Pipe1_skI,PID_FILT_KI,temine integrale,R/W,Value,0,1000,0,,
+PID_Regulator_4_Pipe1_skP,DINT,FALSE,TRUE,Int32,PID4_Pipe1_skP,PID_FILT_KP,temine proporzionale,R/W,Value,0,1000,0,,
+PID_Regulator_4_Pipe1_sMinPulseTime,UDINT,FALSE,TRUE,UInt32,PID4_Pipe1_sMinPulseTime,PID_FILT_Minpulse,Impulso minimo,R/W,Value,0,1000,0,,
+PID_Regulator_4_Pipe1_sSampleTime,UDINT,FALSE,TRUE,UInt32,PID4_Pipe1_sSampleTime,PID_FILT_SampleTime,Frequenza di campionamento e calcolo PID,R/W,Value,1,1000,0,,mS
+PID_Regulator_4_Pipe1_sScaleMax,DINT,FALSE,TRUE,Int32,PID4_Pipe1_sScaleMax,PID_FILT_MaxScale,Setta la percentuale massima di carico,R/W,Value,0,1000,0,,
+PID_Regulator_4_Pipe1_sStartRegualtion,DINT,FALSE,TRUE,Int32,PID4_Pipe1_sStartRegualtion,PID_FILT_switch,Abilita/disabilita  il controllo pid,R/W,Bool,0,1,0,,
+PID_Regulator_5_Pipe2_ActOpMode,UDINT,FALSE,TRUE,UInt32,PID5_Pipe2_ActOpMode,SEP PID Mode,PID5 Separator  Modalità stato PID in regol. off etc..,R,Bool,0,1,0,,
+PID_Regulator_5_Pipe2_sActTemperature,DINT,TRUE,TRUE,Int32,PID5_Pipe2_sActTemperature,T_SEP,temperatura letta,R,Value,0,400,1,0.1,°C
+PID_Regulator_5_Pipe2_sAlarm,DINT,TRUE,TRUE,Int32,PID5_Pipe2_sAlarm,Alarm_T_SEP,Allarme incoerenza..set e valori rilevati.,R,Bool,0,1,0,,
+PID_Regulator_5_Pipe2_sAuxStepSetpoint,DINT,TRUE,TRUE,Int32,PID5_Pipe2_Auxstep_Step,SEP Auxstep_Step,,R,Value,0,1000,1,0.1,°C
+PID_Regulator_5_Pipe2_sControlPowerOut,DINT,TRUE,TRUE,Int32,PID5_Pipe2_sControlPowerOut,PID_SEP,% di carico in uscita,R,Value,0,100,0,0.1,
+PID_Regulator_5_Pipe2_sFinalSetPoint,DINT,FALSE,TRUE,Int32,PID5_Pipe2_sFinalSetPoint,Tset_SEP,temperatura impostata,R/W,Value,0,400,0,0.1,°C
+PID_Regulator_5_Pipe2_sGradient_deg_min,DINT,FALSE,TRUE,Int32,PID5_Pipe2_sGradient_deg_min,Grad_T_SEP,gradiente di salita della temperatura,R/W,Value,0,20,0,,
+PID_Regulator_5_Pipe2_sKD,DINT,FALSE,TRUE,Int32,PID5_Pipe2_sKD,PID_SEP_KD,temine derivativo,R/W,Value,0,1000,0,,
+PID_Regulator_5_Pipe2_skI,DINT,FALSE,TRUE,Int32,PID5_Pipe2_skI,PID_SEP_KI,temine integrale,R/W,Value,0,1000,0,,
+PID_Regulator_5_Pipe2_skP,DINT,FALSE,TRUE,Int32,PID5_Pipe2_skP,PID_SEP_KP,temine proporzionale,R/W,Value,0,1000,0,,
+PID_Regulator_5_Pipe2_sMinPulseTime,UDINT,FALSE,TRUE,UInt32,PID5_Pipe2_sMinPulseTime,PID_SEP_Minpulse,Impulso minimo,R/W,Value,0,1000,0,,
+PID_Regulator_5_Pipe2_sSampleTime,UDINT,FALSE,TRUE,UInt32,PID5_Pipe2_sSampleTime,PID_SEP_SampleTime,Frequenza di campionamento e calcolo PID,R/W,Value,1,1000,0,,mS
+PID_Regulator_5_Pipe2_sScaleMax,DINT,FALSE,TRUE,Int32,PID5_Pipe2_sScaleMax,PID_SEP_MaxScale,Setta la percentuale massima di carico,R/W,Value,0,1000,0,,
+PID_Regulator_5_Pipe2_sStartRegualtion,DINT,FALSE,TRUE,Int32,PID5_Pipe2_sStartRegualtion,PID_SEP_switch,Abilita/disabilita  il controllo pid,R/W,Bool,0,1,0,,
+Read2chTemperature_1_PFR_sActTemperature,,,FALSE,,,,,,,,,,,
+Read2chTemperature_1_PFR_sAlarm,,,FALSE,,,,,,,,,,,
+Read2chTemperature_1_PFR_sLimitTrashold,,,FALSE,,,,,,,,,,,
+Read2chTemperature_1_PFR_sWarning,,,FALSE,,,,,,,,,,,
+Read2chTemperature_2_PreHeater1_sActTemperature,,,FALSE,,,,Queste classi ReadCH….,,,,,,,
+Read2chTemperature_2_PreHeater1_sAlarm,,,FALSE,,,,Leggono le temperature che sono già disponibili,,,,,,,
+Read2chTemperature_2_PreHeater1_sLimitTrashold,,,FALSE,,,,nei pid quindi sono un doppione,,,,,,,
+Read2chTemperature_2_PreHeater1_sWarning,,,FALSE,,,,,,,,,,,
+Read2chTemperature_3_PreHeater2_sActTemperature,,,FALSE,,,,,,,,,,,
+Read2chTemperature_3_PreHeater2_sAlarm,,,FALSE,,,,,,,,,,,
+Read2chTemperature_3_PreHeater2_sLimitTrashold,,,FALSE,,,,,,,,,,,
+Read2chTemperature_3_PreHeater2_sWarning,,,FALSE,,,,,,,,,,,
+Read2chTemperature_4_Pipe1_sActTemperature,,,FALSE,,,,,,,,,,,
+Read2chTemperature_4_Pipe1_sAlarm,,,FALSE,,,,,,,,,,,
+Read2chTemperature_4_Pipe1_sLimitTrashold,,,FALSE,,,,,,,,,,,
+Read2chTemperature_4_Pipe1_sWarning,,,FALSE,,,,,,,,,,,
+Read2chTemperature_5_Pipe2_sActTemperature,,,FALSE,,,,,,,,,,,
+Read2chTemperature_5_Pipe2_sAlarm,,,FALSE,,,,,,,,,,,
+Read2chTemperature_5_Pipe2_sLimitTrashold,,,FALSE,,,,,,,,,,,
+Read2chTemperature_5_Pipe2_sWarning,,,FALSE,,,,,,,,,,,
+SafetyValveTempMonitor_sActTemperature,DINT,TRUE,TRUE,Int32,Temp_SafetyValve_ActTemp,T_SafValve,Temperatura Valvola di sicurezza,R,Value,0,120,1,0.1,°C
+SafetyValveTempMonitor_sAlarm,DINT,TRUE,TRUE,Int32,Temp_SafetyValve_Alarm,Alarm_T_SafValve,Warning  ( esempio sensore staccato ),R,Bool,0,1,0,,
+SafetyValveTempMonitor_sLimitTrashold,DINT,FALSE,TRUE,Int32,Temp_SafetyValve_Thresold,Thrs_T_SafValve,Temperatura Acqua  di raffredamento in uscita,R/W,Value,0,50,0,,°C
+SafetyValveTempMonitor_sWarning,DINT,TRUE,TRUE,Int32,Temp_SafetyValve_Warning,Wrng_T_SafValve,Allarme se temperatura supera threshold,R,Bool,0,1,0,,
+DuplicateSetPointGradient1_ActMode,UDINT,TRUE,TRUE,UInt32,Grad_SetPointGradient1_ActMode,BPR Mng Mode,BPR_Gradient_Stato Classe  attiva/on/off,R,Value,0,1000,0,,
+DuplicateSetPointGradient1_sActPressure,DINT,TRUE,TRUE,Int32,Grad_SetPointGradient1_sActPressure,P_BPR_in,BPR_Upstream_Pressure,R,Value,0,300,2,0.001,Bar
+DuplicateSetPointGradient1_sAlarm,DINT,TRUE,TRUE,Int32,Grad_SetPointGradient1_sAlarm,Alarm_P_BPR_in,BPR_Alarm,R,Bool,0,1,0,,
+DuplicateSetPointGradient1_sAuxStepSetpoint,DINT,TRUE,TRUE,Int32,Grad_SetPointGradient1_sAuxStepSetpoint,BPR Mng Setpoint,Setpoint Calcolato,R,Value,0,1000,0,,
+DuplicateSetPointGradient1_sFinalSetPoint,DINT,FALSE,TRUE,Int32,Grad_SetPointGradient1_sFinalSetPoint,Pset_BPR,Pressione finale  set point,R/W,Value,0,252,0,0.001,Bar
+DuplicateSetPointGradient1_sGradient_unit_Sec,DINT,FALSE,TRUE,Int32,Grad_SetPointGradient1_sGradient_unit_Sec,Grad_P_BPR,Stabilisce il grandiente di salita,R/W,Value,1,20,0,0.001,Bar/Sec
+DuplicateSetPointGradient1_sStartRegualtion,DINT,FALSE,TRUE,Int32,Grad_SetPointGradient1_sStartRegualtion,BPR_switch,Abilita/disabilita  il controllo di regolazione della pres.,R/W,Bool,0,1,0,,
+MY_PID_PUMP_REGULATOR_V31_ActOpMode,UDINT,TRUE,TRUE,UInt32,PID_PressureV31_ActOpMode,BPR PID Mode,BPR Stato PID in regolazione / ON/OFF,R,Value,0,0,0,,
+MY_PID_PUMP_REGULATOR_V31_ControlValuePercent,DINT,TRUE,TRUE,Int32,PID_PressureV31_ControlValuePercent,BPR %,,R,Value,0,100,0,0.001,%
+MY_PID_PUMP_REGULATOR_V31_sActValue,DINT,TRUE,TRUE,Int32,PID_PressureV31_sActValue,P_BPR,,R,Value,0,250,0,0.001,Bar
+MY_PID_PUMP_REGULATOR_V31_sAlarm,DINT,TRUE,TRUE,Int32,PID_PressureV31_sAlarm,Alarm_P_BPR_in,,R,Bool,0,1,0,,
+MY_PID_PUMP_REGULATOR_V31_sKD,DINT,FALSE,TRUE,Int32,PID_PressureV31_sKD,PID_BPR_KD,,R/W,Value,0,1000,0,,
+MY_PID_PUMP_REGULATOR_V31_skI,DINT,FALSE,TRUE,Int32,PID_PressureV31_skI,PID_BRP_KI,,R/W,Value,0,1000,0,,
+MY_PID_PUMP_REGULATOR_V31_skP,DINT,FALSE,TRUE,Int32,PID_PressureV31_skP,PID_BPR_KP,,R/W,Value,0,1000,0,,
+MY_PID_PUMP_REGULATOR_V31_sPid_OnOff,DINT,FALSE,TRUE,Int32,PID_PressureV31_sPid_OnOff,PID_BPR_switch,,R/W,Bool,0,1,0,,
+MY_PID_PUMP_REGULATOR_V31_sSampleTime,UDINT,FALSE,TRUE,UInt32,PID_PressureV31_sSampleTime,PID_BPR_SampleTime,,R/W,Value,1,2000,0,,S
+MY_PID_PUMP_REGULATOR_V31_sSetPoint,DINT,FALSE,TRUE,Int32,PID_PressureV31_sSetPoint,PID_Pset_BPR,,R/W,Value,0,252,0,0.001,Bar
+ScaleInputPressure1_outValue,,,FALSE,,,,,,,,,,,
+ScaleInputPressure1_sAlarm,,,FALSE,,,,Questa classe scala la pressione di ingresso,,,,,,,
+ScaleInputPressure1_sMax,,,FALSE,,,,Leggono le temperature che sono già disponibili,,,,,,,
+ScaleInputPressure1_sMin,,,FALSE,,,,nei pid quindi sono un doppione,,,,,,,
+ScaleInputPressure_filterIN_outValue,DINT,TRUE,TRUE,Int32,ScaleInputPressure_filterIN_outValue,P_FILT_in,Sensore di pressione prima del filtro,R,Value,0,400000,0,0.001,Bar
+ScaleInputPressure_filterIN_sAlarm,DINT,TRUE,TRUE,Int32,ScaleInputPressure_filterIN_sAlarm,Alarm_P_FILT_in,Allarme Sensore di pressione prima del filtro,R,Bool,0,1,0,,
+ScaleInputPressure_filterIN_sMax,DINT,TRUE,TRUE,Int32,ScaleInputPressure_filterIN_sMax,Up_StreamFilter Span,Scala massima lettura dopo sensore filtro,R,Value,0,400000,0,0.001,Bar
+ScaleInputPressure_filterIN_sMin,DINT,TRUE,TRUE,Int32,ScaleInputPressure_filterIN_sMin,Up_StreamFilter Zero,Scala minima lettura sensore prima del filtro,R,Value,0,400000,0,0.001,Bar
+AirMng1_sEnable,DINT,FALSE,TRUE,Int32,VALVE_AirMng1_sEnable,DV_switch,Attivazione temporizzata valvola scarico liquido,R,Bool,0,1,0,,
+AirMng1_sValveActive,DINT,TRUE,TRUE,Int32,VALVE_AirMng1_sValveActive,Valve ON,,R,Bool,0,1,0,,
+AirMng1_T_Off,UDINT,FALSE,TRUE,UInt32,VALVE_AirMng1_T_Off,Time OFF,Tempo OFF,R,Value,0,1000,0,,S
+AirMng1_T_On,UDINT,FALSE,TRUE,UInt32,VALVE_AirMng1_T_On,Time ON,Tempo ON,R,Value,0,1000,0,,S
+MachineMng1_cBuzzerVisu,DINT,TRUE,TRUE,Int32,MachineMng1_cBuzzerVisu,Light_tower Buz,Da indicare con tipo LED ( è la torretta ) Buz_ Lel BLU,R,Bool,0,1,0,,
+MachineMng1_cLightGREENVisu,DINT,TRUE,TRUE,Int32,MachineMng1_cLightGREENVisu,Light_tower_Green,Da indicare con tipo LED ( è la torretta ) Led verde,R,Bool,0,1,0,,
+MachineMng1_cLightREDVisu,DINT,TRUE,TRUE,Int32,MachineMng1_cLightREDVisu,Light_tower_RED,Da indicare con tipo LED ( è la torretta ) Led rosso,R,Bool,0,1,0,,
+MachineMng1_cLightYELLOWVisu,DINT,TRUE,TRUE,Int32,MachineMng1_cLightYELLOWVisu,Light_tower_Yellow,Da indicare con tipo LED ( è la torretta ) Led giallo,R,Bool,0,1,0,,
+MachineMng1_sAlarmActive,DINT,TRUE,TRUE,Int32,MachineMng1_sAlarmActive,Alarm Active,allarme attivo,R,Bool,0,1,0,,
+MachineMng1_sAlarmOutletTemperature,DINT,TRUE,TRUE,Int32,MachineMng1_sAlarmOutletTemperature,Out_temperature,Temperatura di uscita allarme,R,Bool,0,1,0,,
+MachineMng1_sAlarmPidHeater,DINT,TRUE,TRUE,Int32,MachineMng1_sAlarmPidHeater,Pid Heater,allarme generale riscaldatori PID,R,Bool,0,1,0,,
+MachineMng1_sAlarmPressureDifference,DINT,TRUE,TRUE,Int32,MachineMng1_sAlarmPressureDifference,Alarm filt. Pres drop,allar me differenziale pressione su filtro,R,Bool,0,1,0,,
+MachineMng1_sAlarmPump,DINT,TRUE,TRUE,Int32,MachineMng1_sAlarmPump,Alarm pump,Pompa allarme 1,R,Bool,0,1,0,,
+MachineMng1_sAlarmPump2,DINT,TRUE,TRUE,Int32,MachineMng1_sAlarmPump2,Alarm Pump2,Pompa allarme 2,R,Bool,0,1,0,,
+MachineMng1_sEnableMainContact,DINT,FALSE,TRUE,Int32,MACHINE_Mng1_sEnableMainContact,Power ON,Classe di abilitazione generale,R/W,Bool,0,1,0,,
+MachineMng1_sFilterDirtyVISU,DINT,TRUE,TRUE,Int32,MACHINE_Mng1_sFilterDirtyVISU,Filter status,Stato filtro,R,Bool,0,1,0,,
+MachineMng1_sSafetyAlarmActive,DINT,TRUE,TRUE,Int32,MACHINE_Mng1_sSafetyAlarmActive,Safety alarm active,Sicurezza / ripari / emergenze attive/,R,Bool,0,1,0,,
+MachineMng1_sStartAirValveV2_scaricoCondensatore,DINT,FALSE,TRUE,Int32,MACHINE_Mng1_sStartAirValveV2,Air Valve V2,,R/W,Bool,0,1,0,,
+MachineMng1_sStartHeater,DINT,FALSE,TRUE,Int32,MACHINE_Mng1_sStartHeater,Start Heeaters,Abilita I riscaldatori ( tutti ),R/W,Bool,0,1,0,,
+MachineMng1_sStartPump,DINT,FALSE,TRUE,Int32,MACHINE_Mng1_sStartPump,Pump_VP_ON,,R/W,Bool,0,1,0,,
+MachineMng1_sStartValveFlowCompensation,DINT,FALSE,TRUE,Int32,MACHINE_Mng1_sStartValveFlowCompensation,BPR_ON,,R/W,Bool,0,1,0,,
+MachineMng1_sWarningActive,DINT,TRUE,TRUE,Int32,MACHINE_Mng1_sWarningActive,Warning,Preallarme attivo,R,Bool,0,1,0,,
+_ReadInputRegister1_ErrMsgByte0,UDINT,TRUE,TRUE,UInt32,PUMP_Pump1_ErrMsgByte0,VP_Err0,Registri letti dalla pompa ( no error 0x30 0x30 0x30),R,Hex,0,0xFF,0,,
+_ReadInputRegister1_ErrMsgByte1,UDINT,TRUE,TRUE,UInt32,PUMP_Pump1_ErrMsgByte1,VP_Err1,Table 3 – user manual,R,Hex,0,0xFF,0,,
+_ReadInputRegister1_ErrMsgByte2,UDINT,TRUE,TRUE,UInt32,PUMP_Pump1_ErrMsgByte2,VP_Err2,,R,Hex,0,0xFF,0,,
+_ReadInputRegister1_sCom_Ver,UDINT,TRUE,TRUE,UInt32,PUMP_Pump1_sCom_Ver,VP_com_Ver,Versione driver comunicazione,R,Value,0,1000,0,,
+_ReadInputRegister1_sCumulativeVolumeLong,DINT,TRUE,TRUE,Int32,,,,,,,,,,
+_ReadInputRegister1_sDatalenght,UDINT,TRUE,TRUE,UInt32,PUMP_Pump1_sDatalenght,VP_DataL,Datalenght,R,Value,0,1000,0,,
+_ReadInputRegister1_sErrorCommon,UDINT,TRUE,TRUE,UInt32,PUMP_Pump1_sErrorCommon,VP_ErrorC,Table 6 – user manual pump,R,Hex,0,0x200,0,,
+_ReadInputRegister1_sErrorCylinderA,UDINT,TRUE,TRUE,UInt32,PUMP_Pump1_sErrorCylinderA,VP  Err. CylA,Stato errore cilindro A,R,Hex,0,0x200,0,,
+_ReadInputRegister1_sErrorCylinderB,UDINT,TRUE,TRUE,UInt32,PUMP_Pump1_sErrorCylinderB,VP  Err. CylB,Stato errore cilindro B,R,Hex,0,0x200,0,,
+_ReadInputRegister1_SFlowCylinderA,DINT,TRUE,TRUE,Int32,PUMP_Pump1_SFlowCylinderA,Flow CylA,Flusso cilindro A,R,Value,0,54,2,0.000001,ml/min
+_ReadInputRegister1_SflowCylinderB,DINT,TRUE,TRUE,Int32,PUMP_Pump1_SflowCylinderB,Flow CylB,Flusso cilindro B,R,Value,0,54,2,0.000001,ml/mini
+_ReadInputRegister1_SFlowTotal,DINT,TRUE,TRUE,Int32,PUMP_Pump1_SFlowTotal,Total flow,Flusso totale,R,Value,0,54,2,0.000001,ml/min
+_ReadInputRegister1_sLatchedErrorCommon,UDINT,TRUE,TRUE,UInt32,PUMP_Pump1_sLatchedErrorCommon,Latched_Error_Com,Table 6 – user manual pump,R,Hex,0,0x200,0,,
+_ReadInputRegister1_sLatchedErrorCylA,UDINT,TRUE,TRUE,UInt32,PUMP_Pump1_sLatchedErrorCylA,Latched_Error_CylA,,R,Hex,0,0x200,0,,
+_ReadInputRegister1_sLatchedErrorCylB,UDINT,TRUE,TRUE,UInt32,PUMP_Pump1_sLatchedErrorCylB,Latched_Error_CylB,,R,Hex,0,0x200,0,,
+_ReadInputRegister1_sPressure_OUT,DINT,TRUE,TRUE,Int32,PUMP_Pump1_sPressure_OUT,Out pressure,Pressione di uscita,R,Value,0,300,1,0.001,Bar
+_ReadInputRegister1_sPressureCylinderA,DINT,TRUE,TRUE,Int32,PUMP_Pump1_sPressureCylinderA,Press. CylA,Pressione attuale cilindro A,R,Value,0,300,1,0.001,Bar
+_ReadInputRegister1_sPressureCylinderB,DINT,TRUE,TRUE,Int32,PUMP_Pump1_sPressureCylinderB,Press. CylB,Pressione attuale cilindro B,R,Value,0,300,1,0.001,Bar
+_ReadInputRegister1_sPumpConditionA,UDINT,TRUE,TRUE,UInt32,PUMP_Pump1_sPumpConditionA,Pump ConditionA,Table 5 – user manual pump,R,Hex,0,0x8000,0,,
+_ReadInputRegister1_sPumpConditionB,UDINT,TRUE,TRUE,UInt32,PUMP_Pump1_sPumpConditionB,Pump ConditionB,,R,Hex,0,0x8000,0,,
+_ReadInputRegister1_sPumpMode,UDINT,TRUE,TRUE,UInt32,PUMP_Pump1_sPumpMode,Pump mode,Table2 – User manual   ( read mode ),R,Hex,0,0x16,0,,
+_ReadInputRegister1_sSafetyPressureA_Bar,DINT,TRUE,TRUE,Int32,Safety pressure_Bar_A,Safety pres._Bar_A,Pressione di sic. riletta dalla pompa cilindro A – BAR,R,Value,0,400000,0,0.01,Bar
+_ReadInputRegister1_sSafetyPressureA_PSI,DINT,TRUE,TRUE,Int32,Safety pressure_PSI_A,Safety pres._PSI_A,Pressione di sic. riletta dalla pompa cilindro A – PSI,R,Value,0,2750,0,0.01,PSI
+_ReadInputRegister1_sSafetyPressureB_Bar,DINT,TRUE,TRUE,Int32,Safety pressure_Bar_B,Safety pres._Bar_B,Pressione di sic. riletta dalla pompa cilindro B – BAR,R,Value,0,400000,0,0.01,Bar
+_ReadInputRegister1_sSafetyPressureB_PSI,DINT,TRUE,TRUE,Int32,Safety pressure_PSI_B,Safety pres_PSI_B,Pressione di sic. riletta dalla pompa cilindro B – PSI,R,Value,0,2750,0,0.01,PSI
+_ReadInputRegister1_sValvePosition,UDINT,TRUE,TRUE,Int32,Valve position,Valve position,,R,Hex,0,1111,0,,
+_ReadInputRegister1_sVolumeCylinderA,DINT,TRUE,TRUE,Int32,PUMP_Pump1_sVolumeCylinderA,Vol. CylA,,R,Value,0,100000,2,0.0001,ml
+_ReadInputRegister1_sVolumeCylinderB,DINT,TRUE,TRUE,Int32,PUMP_Pump1_sVolumeCylinderB,Vol. CylB,,R,Value,0,100000,2,0.0001,ml
+_ReadInputRegister1_sVolumeTotal,DINT,TRUE,TRUE,Int32,PUMP_Pump1_sVolumeTotal,Vol. Total,,R,Value,0,100000,2,0.0001,ml
+_ReadWriteHoldingRegister1_sAutoStartCylA,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sAutoStartCylA,Autostart CylA,Registri in scrittura ( pompa),R/W,Bool,0,1,0,,
+_ReadWriteHoldingRegister1_sAutoStartCylB,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sAutoStartCylB,Autostart CylB,,R/W,Bool,0,1,0,,
+_ReadWriteHoldingRegister1_sClearLatchedError,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sClearLatchedError,Clear Lathed Error,,R/W,Hex,0,0x0000007,0,,
+_ReadWriteHoldingRegister1_sExtendCylA,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sExtendCylA,Extend CylA,,R/W,Bool,0,1,0,,
+_ReadWriteHoldingRegister1_sExtendCylB,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sExtendCylB,Extend CylB,,R/W,Bool,0,1,0,,
+_ReadWriteHoldingRegister1_sPumpMode,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sPumpMode,Set Pump mode,Write mode pump,R/W,Hex,0,0x16,0,,
+_ReadWriteHoldingRegister1_sResetVolume,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sResetVolume,Reset volume  “Code table”,0x01- RST-A / 0x02-RST-B / 0X04 – Rst total volume,R/W,Hex,0,0x04,0,,
+_ReadWriteHoldingRegister1_sSetPressureA,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sSetPressureA,Set pressure,,R/W,Value,0,252,0,0	01,
+_ReadWriteHoldingRegister1_sSetPressureB,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sSetPressureB,Set Pressure,,R/W,Value,0,252,0,0	01,
+_ReadWriteHoldingRegister1_sSetRateA,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sSetRateA,Set FlowA,,R/W,Value,0,54,0,0.00001,ml/min
+_ReadWriteHoldingRegister1_sSetRateB,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sSetRateB,Set FlowB,,R/W,Value,0,54,0,0.00001,ml/min
+_ReadWriteHoldingRegister1_sSetSafetyPressureA,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sSetSafetyPressureA,Set safety pressure A,,R/W,Value,0,260,0,0.01,
+_ReadWriteHoldingRegister1_sSetSafetyPressureB,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sSetSafetyPressureB,Set safety pressure B,,R/W,Value,0,260,0,0.01,
+_ReadWriteHoldingRegister1_sStartVolCylA,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sStartVolCylA,Start Vol CylA,Not used,R/W,Value,0,1,0,,
+_ReadWriteHoldingRegister1_sStartVolCylB,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sStartVolCylB,Start Vol CylB,Not Used,R/W,Value,0,1,0,,
+_ReadWriteHoldingRegister1_sStopCylA,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sStopCylA,Stop CylA,,R/W,Bool,0,1,0,,
+_ReadWriteHoldingRegister1_sStopCylB,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sStopCylB,Stop CylB,,R/W,Bool,0,1,0,,
+_ReadWriteHoldingRegister1_sValveCmd,DINT,FALSE,TRUE,Int32,PUMP_Pump1_sValveCmd,Valve CMD,Table 7 ( set valve – table ) / comando manuale,R/W,Hex,0,0xF,0,,
+_ReadWriteHoldingRegister1_UseOffset,DINT,TRUE,TRUE,Int32,PUMP_Pump1_UseOffset,Offset,?? non utilizzato,R,Value,0,0,0,,
+PumpMng1_GeneralAlarm,DINT,TRUE,TRUE,Int32,PUMP_PumpMng1_GeneralAlarm,General Alarm,Classe per la gestione della pompa,R,Bool,0,1,0,,
+PumpMng1_sComError,DINT,TRUE,TRUE,Int32,PUMP_PumpMng1_sComError,Com error,,R,Bool,0,1,0,,
+PumpMng1_sErrMsgCode,DINT,TRUE,TRUE,Int32,PUMP_PumpMng1_sErrMsgCode,Error MSG code,Messaggi di errore,R,Hex,0,0xFFFF,0,,
+PumpMng1_sErrorCommon,DINT,TRUE,TRUE,Int32,PUMP_PumpMng1_sErrorCommon,Error Common,Messaggi di errore,R,Hex,0,0xFFFF,0,,
+PumpMng1_sErrorCylinderA,DINT,TRUE,TRUE,Int32,PUMP_PumpMng1_sErrorCylinderA,Error Cylinder,Messaggi di errore,R,Hex,0,0xFFFF,0,,
+PumpMng1_sErrorCylinderB,DINT,TRUE,TRUE,Int32,PUMP_PumpMng1_sErrorCylinderB,Error Cylinder,Messaggi di errore,R,Hex,0,0xFFFF,0,,
+PumpMng1_sErrorNumber,DINT,TRUE,TRUE,Int32,PUMP_PumpMng1_sErrorNumber,Error number,,R,Hex,0,0xFFFF,0,,
+PumpMng1_SM,UDINT,TRUE,TRUE,UInt32,PUMP_PumpMng1_SM,SM,( come facciamo a selezionare le modalità ?,R,Value,0,3,0,,
+PumpMng1_sPumpActive,DINT,TRUE,TRUE,UInt32,PUMP_PumpMng1_Status,Pump_Status,Stato pompa,R,Value,0,0xFFFF,0,,
+PumpMng1_sPumpMode,UDINT,FALSE,TRUE,UInt32,PUMP_PumpMng1_sPumpMode,Pump mode,Seleziona la modalità di pompaggio della pompa,R/W,Hex,0,0X16,0,,
+PumpMng1_sPumpStatusA,UDINT,TRUE,TRUE,UInt32,PUMP_PumpMng1_sPumpStatusA,Pump StatusA,,R,Bool,0,1,0,,
+PumpMng1_sPumpStatusB,UDINT,TRUE,TRUE,UInt32,PUMP_PumpMng1_sPumpStatusB,Pump StatusB,,R,Bool,0,1,0,,
+PumpMng1_sQuitError,DINT,FALSE,TRUE,Int32,PUMP_PumpMng1_sQuitError,Reset Error,Resetta errori pompa,R/W,Bool,0,1,0,,
+PumpMng1_sSetSafetyPressureRW,DINT,TRUE,TRUE,Int32,Pump_SetSafetyPressure,Set safety pressure,Setta la pressione di sicurezza,W,Value,0,40000,0,0.01,Bar
+PumpMng1_sStartPump,DINT,FALSE,TRUE,Int32,PUMP_PumpMng1_sStartPump,Start Pump,Start / STOP pompa,R/W,Bool,0,1,0,,
+_SysDateTime21_Day,DINT,FALSE,TRUE,Int32,DATETIME_Day,Day,Calendario orologio,R,Value,0,100000,0,,
+_SysDateTime21_DayOfWeek,DINT,TRUE,TRUE,Int32,DATETIME_DayOfWeek,Week day,Giorno della settimana,R,Value,0,100000,0,,
+_SysDateTime21_Hour,DINT,FALSE,TRUE,Int32,DATETIME_Hour,H,Ora,R,Value,0,100000,0,,
+_SysDateTime21_Minute,DINT,FALSE,TRUE,Int32,DATETIME_Minute,M,Minuto,R,Value,0,100000,0,,
+_SysDateTime21_Month,DINT,FALSE,TRUE,Int32,DATETIME_Month,Month,Mese,R,Value,0,100000,0,,
+_SysDateTime21_Second,DINT,FALSE,TRUE,Int32,DATETIME_Second,s,Secondo,R,Value,0,100000,0,,
+_SysDateTime21_SysDate,DINT,FALSE,TRUE,Int32,DATETIME_SysDate,Sys date,Data,R,Value,0,100000,0,,
+_SysDateTime21_SysTime,DINT,FALSE,TRUE,Int32,DATETIME_SysTime,Sys time,Systime,R,Value,0,100000,0,,
+_SysDateTime21_Year,DINT,FALSE,TRUE,Int32,DATETIME_Year,Year,Anno,R,Value,0,100000,0,,
+_SysDateTime21_Year2Digit,DINT,FALSE,TRUE,Int32,DATETIME_Year2Digit,Year2Digit,Anno con 2 digit,R,Value,0,100000,0,,
+TimeMillisCounter1_sMillis,UDINT,TRUE,TRUE,UInt32,DATETIME_Milliseconds,ms,Timer ms,R,Value,0,100000,0,,
